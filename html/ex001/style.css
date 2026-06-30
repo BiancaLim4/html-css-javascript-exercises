@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root {
+   /* fundos */
+   --bg-page:        #0D0B1A;   /* Noite de Velaris */
+   --bg-card:        #1C1830;   /* Sombra Ilíria */
+   --bg-hover:       #241F3A;   /* Névoa da Corte */
+   --border:         #2E2650;   /* Violeta Profundo */
+
+   /* cores */
+   --accent:         #9B7FD4;   /* Lua de Velaris */
+   --accent-light:   #C9B8FF;   /* Luz das Estrelas */
+   --gold:           #C4A55A;   /* Ouro da Sidra */
+   --blue:           #7B9EB8;   /* Rio Sidra */
+
+   /* texto */
+   --text-primary:   #D4CEFF;   /* Névoa Pálida */
+   --text-secondary: #8B7FA8;   /* Crepúsculo */
+   --text-muted:     #6B6280;   /* Penumbra */
+   /* fonte */
+   --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    background-color: var(--bg-page);
+    font-weight: 700;
+    margin: 20px;
+}
+
+main{
+    background-color: var(--bg-hover);
+    max-width: 80%;
+    margin: auto;
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+#sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 85vh;
+}
+
+#img-sobre {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#saiba-mais {
+    background-color: var(--gold);
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    border: 2px solid #edc76e;
+    border-radius: 20px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+#saiba-mais:hover {
+    background-color: #edc76e;
+    text-decoration: underline;
+}
