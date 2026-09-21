@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <main>
+        <div id="container-condicao">
+            <div id="descricao">
+                <h1>Exercício 2 - Condições</h1>
+                <p>Nesse exercício preciso codar uma estrutura de condição básica para validar se um usuário possui idade mínima para votar em época eleitoral</p>
+            </div>
+            <div>
+                <script>
+                    let idade = 90;
+                    if (idade < 16) {
+                        console.log(`Você tem ${idade} anos, ainda não está apto para votar!`);
+                    }
+                    else if (idade <= 17 || idade >= 70) {
+                        console.log(`Você tem ${idade} anos, ou seja, seu voto não é obrigatório!`);
+                    }
+                    else {
+                        console.log(`Você precisa votar pois tem ${idade} anos.`);
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
